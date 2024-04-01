@@ -40,3 +40,52 @@ nav ul li{
 nav ul li a:hover{
     color: grey;
 }
+
+/* Hero Section */
+.heroSection{
+    background-image: url("");
+    width: 100%;
+}
+
+/* course Tag Section */
+.courseTags{
+margin:20px;
+}
+
+.courseTags td button{
+    padding: 30px;
+    background-color: rgb(74, 127, 74);
+    border-radius: 50px;
+    justify-content: center;
+    width: 15em;
+    margin: 10px 20px;
+    border: none;
+}
+.courseTags td button:hover{
+    color: white;
+    background-color: brown;
+}
+
+/* Course Cards Section */
+.CourseCardsMain a{
+text-decoration: none;
+color: black;
+}
+.courseContainer{
+    display: flex;
+    flex-wrap:wrap;
+    justify-content: space-around;
+    align-items: center;
+}
+.courseCards{
+    border: 1px solid black;
+    padding: 1em;
+    margin: 10px;
+    width: 40%;
+}
+.courseCards img{
+    width: 100%;
+}
+.courseCards p{
+    color: grey;
+}
