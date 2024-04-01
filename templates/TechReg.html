@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/static/style.css">
+    <link rel="stylesheet" href="/static/Register.css">
+    <title>Teacher Register</title>
+</head>
+
+<body>
+    <div>
+        <nav>
+            <h1><a href="">CourseTera</a></h1>
+            <ul>
+                <li><a href="/templates/Index.html">Home</a></li>
+                <li><a href="/templates/StudentLogin.html">Student Login</a></li>
+                <li><a href="/templates/TeacherLogin.html">Teacher Login</a></li>
+                <!-- <li><a href="">Blog</a></li> -->
+            </ul>
+        </nav>
+    </div>
+    <form class="stuReg" action="" method="post">
+        <h1>CourseTera</h1>
+        <h3>Teacher Registration</h3>
+        <div class="container">
+            <label for="uname"><b>Username</b></label>
+            <input type="text" placeholder="Enter Username" name="uname" required>
+            
+            <label for="email"><b>Email</b></label>
+            <input type="email" placeholder="Enter Email-id" name="email" required>
+
+            <label for="pwd"><b>Password</b></label>
+            <input type="password" placeholder="Create Password" name="pwd" required>
+            <button type="button">Create Account</button>
+        </div>
+        <span class="txt">Already an user? <a href="TeacherLogin.html">Login</a></span>
+        </div>
+    </form>
+</body>
+
+</html>

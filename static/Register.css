@@ -11,7 +11,7 @@ h1{
 h3{
   color: grey;
 }
-.stuLogin {
+.stuReg {
     width: 50%;
     margin: 5em auto;
     text-align: center;
@@ -20,7 +20,7 @@ h3{
     border-radius: 1em;
 }
 
-input[type=text], input[type=password] {
+input[type=text], input[type=password], input[type=email]{
   width: 100%;
   padding: 12px 20px;
   margin: 8px 0;
@@ -45,13 +45,4 @@ button:hover {
 
 .container {
   padding: 16px;
-}
-
-span.txt {
-  float: right;
-  padding-top: 16px;
-}
-.spanTxt{
-  display: flex;
-  justify-content: space-between;
 }
