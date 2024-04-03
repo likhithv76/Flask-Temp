@@ -20,6 +20,10 @@ h1 {
     padding: 30px;
     color: white;
 }
+.h2{
+    padding-top: 6em;
+    color: #3904cc;
+}
 h2{
     padding-top: 2em;
     color: #3904cc;
@@ -34,6 +38,10 @@ h2{
     background-color: #3904cc;
     align-items: center;
     z-index: 2;
+    position: fixed;
+    overflow: hidden;
+    top: 0%;
+    width: 100%;
 }
 .navButton button{
     padding: 1em 2em;
