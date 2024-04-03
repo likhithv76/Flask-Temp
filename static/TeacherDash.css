@@ -7,69 +7,59 @@
     font-style: normal;
     box-sizing: border-box;
 }
-
-/* Container for the Teacher Dashboard */
-.outerTDash {
+/* Teacher Dashboard Banner styles */
+.TeacherDashContent{
+    display:flex;
+flex-direction: column;
+justify-content: center;
+margin: 0 auto;
+text-align: center;
+}
+h1 {
+    background-color:#3904cc;
+    padding: 30px;
+    color: white;
+}
+h2{
+    padding-top: 2em;
+    color: #3904cc;
+}
+/* nav Button */
+.navButton{
     display: flex;
     flex-wrap: nowrap;
-}
-
-/* Sidebar styles */
-.sideBar {
-    background-color: blue;
-    width: 20%;
-    color: white;
-    height: 100vh;
-}
-
-.sideBar ul li {
-    display: flex;
-    justify-content: center;
-    list-style: none;
+    justify-content: space-around;
     padding: 1em;
-    border-bottom: 4px solid black;
-}
-
-.sideBar ul li img {
-    border: 0.5em solid white;
-    border-radius: 50%;
-    width: 200px;
-    height: 200px;
-    margin-bottom: 10px; 
-}
-
-.teacherBio li {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+    gap: 1em;
+    background-color: #3904cc;
     align-items: center;
+    z-index: 2;
 }
-
-.teacherBio li h3 {
-    padding-bottom: 2em;
-}
-
-.sideBar ul li a {
-    text-decoration: none;
+.navButton button{
+    padding: 1em 2em;
     color: white;
+    background-color: navy;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    border: 2px solid black;
 }
-
-
-
-/* Teacher Dashboard Banner styles */
-.TDashBanner{
-   width: auto;
+.navButton button:hover{
+    background-color: blue;
 }
-.TDashBanner h1 {
-    background-color: aqua;
-    padding: 50px 100%;
-}
-
 /* Table styles */
-table {
+.table{
+    padding:1em 5em;
+}
+.table table{
     font-family: arial, sans-serif;
     border-collapse: collapse;
     width: 100%;
+  }
+ .table th{
+    text-align: center;
+    color: navy;
+    font-size: 25px;
   }
   
   td, th {
@@ -78,6 +68,3 @@ table {
     padding: 8px;
   }
   
-  tr:nth-child(even) {
-    background-color: #dddddd;
-  }
