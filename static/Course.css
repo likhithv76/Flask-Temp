@@ -1,0 +1,55 @@
+@import url('https://fonts.googleapis.com/css2?family=Agdasima:wght@400;700&family=Bungee+Spice&family=Foldit:wght@100..900&family=Gugi&family=Noto+Color+Emoji&family=Play:wght@400;700&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&family=Victor+Mono:ital,wght@0,100..700;1,100..700&display=swap');
+
+*{
+    margin: 0%;
+    padding: 0%;
+    left:0%;
+    font-family: "Ubuntu", sans-serif;
+  font-style: normal;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+
+.container{
+    padding: 1em;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+.h1{
+color: #3904cc;
+margin-bottom: 1em;
+}
+.cards a{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0.5em;
+    border: 2px solid #3904cc;
+    border-radius: 10px;
+    margin-bottom: 1em;
+    text-align: left;
+}
+.cards a:hover{
+    background-color: #4e10fa74;
+}
+.cards img{
+    width: 400px;
+    border-radius: 10px;
+}
+.cardDesc{
+    margin-left: 1em;
+    width: 70%;
+
+}
+.cardDesc p{
+    height: 130px;
+}
+.cardDesc button{
+    background-color: #3904cc;
+    color: white;
+    padding: 0.5em 2em;
+    border-radius: 10px;
+    border: none;
+}

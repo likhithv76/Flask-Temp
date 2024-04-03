@@ -1,0 +1,83 @@
+@import url('https://fonts.googleapis.com/css2?family=Agdasima:wght@400;700&family=Bungee+Spice&family=Foldit:wght@100..900&family=Gugi&family=Noto+Color+Emoji&family=Play:wght@400;700&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&family=Victor+Mono:ital,wght@0,100..700;1,100..700&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Ubuntu", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    box-sizing: border-box;
+}
+
+/* Container for the Teacher Dashboard */
+.outerTDash {
+    display: flex;
+    flex-wrap: nowrap;
+}
+
+/* Sidebar styles */
+.sideBar {
+    background-color: blue;
+    width: 20%;
+    color: white;
+    height: 100vh;
+}
+
+.sideBar ul li {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    padding: 1em;
+    border-bottom: 4px solid black;
+}
+
+.sideBar ul li img {
+    border: 0.5em solid white;
+    border-radius: 50%;
+    width: 200px;
+    height: 200px;
+    margin-bottom: 10px; 
+}
+
+.teacherBio li {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.teacherBio li h3 {
+    padding-bottom: 2em;
+}
+
+.sideBar ul li a {
+    text-decoration: none;
+    color: white;
+}
+
+
+
+/* Teacher Dashboard Banner styles */
+.TDashBanner{
+   width: auto;
+}
+.TDashBanner h1 {
+    background-color: aqua;
+    padding: 50px 100%;
+}
+
+/* Table styles */
+table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+  }
+  
+  td, th {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+  }
+  
+  tr:nth-child(even) {
+    background-color: #dddddd;
+  }
