@@ -75,4 +75,20 @@ h2{
     text-align: left;
     padding: 8px;
   }
-  
+.buttonTd{
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+.buttonTd button{
+    width: 6em;
+    padding: 0.5em 0;
+    color: white;
+    border: none;
+border-radius: 10px;
+cursor: pointer;
+}
+.buttonTd button:hover{
+    opacity: 0.8;
+    color: black;
+}
