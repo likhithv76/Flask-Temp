@@ -105,3 +105,79 @@ cursor: pointer;
     opacity: 0.8;
     color: black;
 }
+
+/* Course Popup */
+#Course-List {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+}
+
+.container {
+    background-color: white;
+    margin: 10% auto;
+    padding: 20px;
+    width: 80%;
+    max-width: 600px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.card {
+    padding: 20px;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+}
+
+.tablePop {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+.tablePop th {
+    text-align: center;
+    color: navy;
+    font-size: 25px;
+    padding: 1em;
+}
+
+
+/* update */
+.p{
+    color: #3904cc;
+    font-size: 40px;
+    padding-bottom: 1em;
+}
+
+.CourseForm{
+    width: 40%;
+    border: 2px solid #3904cc;
+    margin: 0 auto;
+    padding: 2em;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+.CourseForm input{
+height: 3em;
+border: 2px solid #3904cc;
+border-radius: 10PX;
+}
+.CourseForm button{
+    padding: 1em;
+    color: white;
+    background-color: #3904cc;
+    border: none;
+    border-radius: 10px;
+}
+.CourseForm button:hover{
+    background-color: navy;
+}

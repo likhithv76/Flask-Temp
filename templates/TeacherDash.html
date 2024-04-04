@@ -9,7 +9,7 @@
 </head>
 
 <body>
-        <div class="TeacherDashContent">
+        <div class="TeacherDashContent" id="Main-List">
                 <div class="navButton">
 <a href="#StudentList"><button>Student List</button></a>
 <h1>Teacher's Dashboard</h1>
@@ -50,7 +50,7 @@
                         <th>course_name</th>
                         <th>course_desc</th>
                         <th>course_abc</th>
-                        <th>Action <button class="addBtn">Add</button> </th>
+                        <th>Action <button class="addBtn" onclick="openCourse()">Add</button> </th>
                     </tr>
                     <tr>
                         <td>nagi</td>
@@ -62,10 +62,94 @@
                             <button style="background-color: blue;">Update</button>
                         </td>
                     </tr>
-
+                    <tr>
+                        <td>nagi</td>
+                        <td>nagimaggi</td>
+                        <td>nagimaggi@noodles.com</td>
+                        <td>naginigga</td>
+                        <td class="buttonTd">
+                            <button style="background-color: red;">Delete</button>
+                            <button style="background-color: blue;">Update</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>nagi</td>
+                        <td>nagimaggi</td>
+                        <td>nagimaggi@noodles.com</td>
+                        <td>naginigga</td>
+                        <td class="buttonTd">
+                            <button style="background-color: red;">Delete</button>
+                            <button style="background-color: blue;">Update</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>nagi</td>
+                        <td>nagimaggi</td>
+                        <td>nagimaggi@noodles.com</td>
+                        <td>naginigga</td>
+                        <td class="buttonTd">
+                            <button style="background-color: red;">Delete</button>
+                            <button style="background-color: blue;">Update</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>nagi</td>
+                        <td>nagimaggi</td>
+                        <td>nagimaggi@noodles.com</td>
+                        <td>naginigga</td>
+                        <td class="buttonTd">
+                            <button style="background-color: red;">Delete</button>
+                            <button style="background-color: blue;">Update</button>
+                        </td>
+                    </tr>
+                    
                 </table>
             </div>
+            <!-- Course Popup -->
+            <div >
+<div class="container" id="Course-List" >
+    <div class="card">
+        <table class="tablePop">
+            <tr>
+                <th>course_name</th>
+                <th>course_desc</th>
+                <th>Action</th>
+            </tr>
+            <tr>
+                <td>name</td>
+                <td>desc</td>
+                <td class="addBtn" style="text-align: center;">Add Course</td>
+            </tr>
+            <tr>
+                <td>name</td>
+                <td>desc</td>
+                <td class="addBtn" style="text-align: center;">Add Course</td>
+            </tr>
+        </table>
+    </div>
+</div>
+            </div>
         </div>
+        <form action="{{ url_for('update_student', student_id=student.student_id) }}" method="POST" class="CourseForm">
+            <p class="p">Update</p>
+            <label for="username">Username:</label>
+            <input type="text" id="username" name="username" value="{{ student.username }}"><br><br>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" value="{{ student.email }}"><br><br>
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" value="{{ student.password }}"><br><br>
+            <button type="submit">Update</button>
+        </form>
 </body>
+<script>
+    function openCourse(){
+        var courseList = document.getElementById("Course-List");
+        if (courseList.style.display === "none" || courseList.style.display === "") {
+            courseList.style.display = "flex";
+        } else {
+            courseList.style.display = "none";
+        }
+    }
+</script>
 
 </html>
