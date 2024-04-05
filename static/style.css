@@ -69,6 +69,7 @@ nav ul li a:hover{
 .UserName{
     font-size: 80px;
     padding-bottom: 1em;
+    transition: 0.3;
 }
 .HeroText{
     width: 50%;
