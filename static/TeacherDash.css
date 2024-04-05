@@ -24,7 +24,7 @@ h1 {
     padding-top: 6em;
     color: #3904cc;
 }
-h2{
+.table h2{
     padding-top: 2em;
     color: #3904cc;
 }
@@ -32,7 +32,7 @@ h2{
 .navButton{
     display: flex;
     flex-wrap: nowrap;
-    justify-content: space-around;
+    justify-content: space-between;
     padding: 1em;
     gap: 1em;
     background-color: #3904cc;
@@ -57,7 +57,7 @@ h2{
 }
 /* Table styles */
 .table{
-    padding:1em 5em;
+    padding:7em 5em;
 }
 .table table{
     font-family: arial, sans-serif;

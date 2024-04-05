@@ -11,13 +11,17 @@
 <body>
         <div class="TeacherDashContent" id="Main-List">
                 <div class="navButton">
-<a href="#StudentList"><button>Student List</button></a>
-<h1>Teacher's Dashboard</h1>
-<a href="#CourseList"><button>Course List</button></a>
+                    <h1>Teacher's Dashboard</h1>
+                    <div>
+                        <button onclick="showStudentList()" id="stBtn">Student List</button>
+                        <button onclick="showCourseList()" id="CBtn">Course List</button>
+                    </div>
+
                 </div>
-                <h2 class="h2">Student List</h2>
+                
                 <!-- Student List -->
-                <div class="table" id="StudentList">
+                <div class="table" id="StudentList" style="display: none;">
+                    <h2 class="h2">Student List</h2>
                 <table>
                     <tr>
                         <th>Stu_id</th>
@@ -41,9 +45,10 @@
                     
                 </table>
             </div>
-            <h2>Course List</h2>
+            
             <!-- Course List -->
-            <div class="table" id="CourseList">
+            <div class="table" id="CourseList" style="display: none;">
+                <h2>Course List</h2>
                 <table>
                     <tr>
                         <th>course_id</th>
@@ -146,10 +151,34 @@
         var courseList = document.getElementById("Course-List");
         if (courseList.style.display === "none" || courseList.style.display === "") {
             courseList.style.display = "flex";
+            
         } else {
             courseList.style.display = "none";
         }
     }
+
+    function showStudentList() {
+            var studentList = document.getElementById("StudentList");
+            var courseList = document.getElementById("CourseList");
+            if (studentList.style.display === "none") {
+                studentList.style.display = "block";
+                courseList.style.display = "none";
+                document.getElementById("stBtn").style.backgroundColor="green";
+                document.getElementById("CBtn").style.backgroundColor="navy";
+            }
+        }
+
+        function showCourseList() {
+            var studentList = document.getElementById("StudentList");
+            var courseList = document.getElementById("CourseList");
+            if (courseList.style.display === "none") {
+                courseList.style.display = "block";
+                studentList.style.display = "none";
+                document.getElementById("CBtn").style.backgroundColor="green";
+                document.getElementById("stBtn").style.backgroundColor="navy";
+            }
+        }
+
 </script>
 
 </html>
