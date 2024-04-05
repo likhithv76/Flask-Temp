@@ -22,17 +22,13 @@ a{
 color: #3904cc;
 margin-bottom: 1em;
 }
-.cards a{
+.cards{
     display: flex;
     flex-wrap: wrap;
     padding: 0.5em;
     border: 2px solid #3904cc;
-    border-radius: 10px;
     margin-bottom: 1em;
     text-align: left;
-}
-.cards a:hover{
-    background-color: #4e10fa74;
 }
 .cards img{
     width: 400px;
@@ -41,15 +37,18 @@ margin-bottom: 1em;
 .cardDesc{
     margin-left: 1em;
     width: 70%;
-
 }
 .cardDesc p{
     height: 130px;
+    padding: 5px 0;
 }
-.cardDesc button{
+.BuyButton{
     background-color: #3904cc;
     color: white;
     padding: 0.5em 2em;
     border-radius: 10px;
     border: none;
+}
+.BuyButton:hover{
+    background-color: navy;
 }
