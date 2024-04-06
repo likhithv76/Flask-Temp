@@ -7,6 +7,18 @@
   font-family: "Ubuntu", sans-serif;
   font-style: normal;
 }
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+body {
+  background: linear-gradient(
+    90deg,
+    rgba(9, 100, 121, 1) 10%,
+    rgba(0, 28, 36, 1) 57%
+  );
+}
 .PurchaseDiv {
   padding: 1em;
   display: flex;
@@ -16,18 +28,20 @@
   align-items: center;
 }
 .PurchaseLeft {
-    width: 50%;
+  width: 50%;
   text-align: center;
   border: 5px solid #3904cc;
   padding: 1em;
   border-radius: 10px;
+  background-color: white;
+  height: 28.5em;
 }
-.PurchaseLeft table{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    text-align: center;
-margin: 0 auto;
+.PurchaseLeft table {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  text-align: center;
+  margin: 0 auto;
 }
 .PurchaseLeft h1 {
   color: #3904cc;
@@ -43,6 +57,7 @@ margin: 0 auto;
   border: 5px solid #3904cc;
   border-radius: 10px;
   padding: 1em;
+  background-color: white;
 }
 .PurchaseRight form h1 {
   text-align: center;
@@ -69,15 +84,15 @@ select {
   display: flex;
   flex-wrap: wrap;
 }
-.courseDetails{
-    display: flex;
-    background: #3904cc;
-    color: white;
-    padding: 1em 0;
-    border-radius: 10px;
-    margin: 10px 0;
-    align-items: center;
+.courseDetails {
+  display: flex;
+  background: #3904cc;
+  color: white;
+  padding: 1em 0;
+  border-radius: 10px;
+  margin: 10px 0;
+  align-items: center;
 }
-.courseDetails p{
-    padding: 0 5px;
+.courseDetails p {
+  padding: 0 5px;
 }
