@@ -6,3 +6,15 @@
     font-style: normal;
     box-sizing: border-box;
 }
+.video{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+.video iframe{
+    display: flex;
+    margin: 1em auto;
+    border: 5px solid white;
+    border-radius: 5px;
+    box-shadow: 5px 5px 20px 5px;
+}
