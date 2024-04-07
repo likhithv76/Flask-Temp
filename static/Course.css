@@ -41,6 +41,7 @@ margin-bottom: 1em;
 .cardDesc p{
     height: 130px;
     padding: 5px 0;
+    text-align: justify;
 }
 .BuyButton{
     background-color: #3904cc;

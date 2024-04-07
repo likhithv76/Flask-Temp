@@ -30,11 +30,10 @@ body {
 .PurchaseLeft {
   width: 50%;
   text-align: center;
-  border: 5px solid #3904cc;
   padding: 1em;
-  border-radius: 10px;
   background-color: white;
   height: 28.5em;
+  box-shadow: 5px 5px 20px 5px black;
 }
 .PurchaseLeft table {
   display: flex;
@@ -54,20 +53,22 @@ body {
 }
 .PurchaseRight form {
   width: 80%;
-  border: 5px solid #3904cc;
-  border-radius: 10px;
   padding: 1em;
   background-color: white;
+  box-shadow: 5px 5px 20px 5px black;
 }
 .PurchaseRight form h1 {
   text-align: center;
   color: #3904cc;
+  padding: 5px 0;
 }
 .PurchaseRight form input,
 select {
   border-radius: 5px;
   height: 2em;
   margin-bottom: 1em;
+  border: none;
+  background-color: #c0c0c0;
 }
 .PurchaseRight form button {
   padding: 1em;
